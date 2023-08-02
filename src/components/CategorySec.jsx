@@ -20,22 +20,26 @@ export default function CategorySec() {
   }, []);
 
   return (
-    <div>
+    <div className="mt-3 row ">
+      <h2 className="text-center">Categories</h2>
       {categories.map((category, idCategory) => (
         // <ul key={idCategory}>
         //   <li>{category.strCategory}</li>
         // </ul>
 
-        <Card key={idCategory} style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={category.strCategoryThumb} />
-          <Card.Body>
-            <Card.Title>{category.strCategory}</Card.Title>
-            <Card.Text>{category.strCategoryDescription}</Card.Text>
-            <Link to={`/categorysec/categorypage/${category.meals}`}>
-           Go somewhere
-            </Link>
-          </Card.Body>
-        </Card>
+        <div className="col-3 ">
+          <Card key={idCategory} style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={category.strCategoryThumb} />
+            <Card.Body className="crd">
+              <Card.Title className="text-light">{category.strCategory}</Card.Title>
+              <Card.Text className="text-light">{category.strCategoryDescription}</Card.Text>
+              <Link to={`/categorysec/categorypage/${category.strCategory}`}>
+                Go somewhere
+              </Link>
+            </Card.Body>
+          </Card>
+          <br />
+        </div>
       ))}
     </div>
   );

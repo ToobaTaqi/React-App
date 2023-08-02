@@ -11,7 +11,7 @@ import Page404 from "./pages/Page404.jsx";
 
 import { Route, Routes, Navigate } from "react-router-dom";
 import Navigatbar from "./components/Navigatbar";
-// import Footer from "./components/Footer";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         </Routes>
       )}
 
-      {/* <Footer /> */}
+      <Footer />
       
     </>
   );

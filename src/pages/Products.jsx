@@ -56,7 +56,7 @@ export default function Products() {
   };
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 p">
 
       <div className="fixed-top pro">
       <div className="letters">
@@ -176,7 +176,7 @@ export default function Products() {
       )}
       {cart.length > 0 && (
         <div className="cart-items m-4 text-left fixed-bottom">
-          <h4>CarMy Cart</h4>
+          <h4>My Cart</h4>
           <ul>
             {cart.map((item, index) => (
               <li key={index}>

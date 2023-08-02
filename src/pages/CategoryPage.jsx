@@ -20,10 +20,10 @@ export default function CategorPage() {
   }, [categoryName]);
 
   return (
-    <div>
+    <div className="row mt-5 m-4 gap-4 crd">
       {meals !== null ? (
         meals.map((meal) => (
-          <Card key={meal.idMeal}>
+          <Card key={meal.idMeal} style={{ width: "18rem" }}>
             <Card.Img variant="top" src={meal.strMealThumb} />
             <Card.Body>
               <Card.Title>{meal.strMeal}</Card.Title>

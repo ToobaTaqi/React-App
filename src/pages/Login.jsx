@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function Login() {
   return (
-    <form className='d-flex flex-wrap flex-column text-center'>
+    <form className='row d-flex flex-wrap flex-column text-center'>
+      <div className='col'>
     <div className="mb-3">
       <label htmlFor="exampleInputEmail1" className="form-label">
         Email address
@@ -36,6 +37,7 @@ export default function Login() {
     <button type="submit" className="butn">
       Submit
     </button>
+    </div>
   </form>
   
   )
